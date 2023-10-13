@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
- 
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -44,7 +42,7 @@ body {
   overflow: hidden !important;
   outline: none !important;
   /* background */
-  background: url('/img/button.png') no-repeat no-repeat !important;
+  background: url("/img/button.png") no-repeat no-repeat !important;
   background-clip: padding-box !important;
   background-origin: padding-box !important;
   background-position: center !important;
@@ -69,16 +67,24 @@ body {
 /* button hover */
 .rpgui-button.hover,
 .rpgui-button:hover {
-  background-image: url('/img/button-hover.png');
+  background-image: url("/img/button-hover.png");
 }
 
 /* button clicked */
 .rpgui-button.down,
 .rpgui-button:active {
-  background-image: url('/img/button-down.png');
+  background-image: url("/img/button-down.png");
 }
 
 .countdown {
   font-size: 0.8em;
   color: yellow;
+}
+
+footer {
+  margin-top: 3em;
+}
+
+.text-xxs {
+  font-size: 0.5em;
 }
