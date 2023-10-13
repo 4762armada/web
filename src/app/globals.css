@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+ 
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -24,4 +26,59 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  font-family: "Press Start 2P" !important;
+}
+
+.bg-gradient {
+  background: url("/corsair_gates_wide.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.rpgui-button {
+  /* hide button default stuff */
+  background-color: Transparent !important;
+  background-repeat: no-repeat !important;
+  border: none !important;
+  overflow: hidden !important;
+  outline: none !important;
+  /* background */
+  background: url('/img/button.png') no-repeat no-repeat !important;
+  background-clip: padding-box !important;
+  background-origin: padding-box !important;
+  background-position: center !important;
+  background-size: 100% 100% !important;
+  /* font size */
+  font-size: 1em !important;
+  /* default size and display */
+  max-width: 100% !important;
+  min-width: 140px !important;
+  height: 60px !important;
+  display: inline-block !important;
+  /* padding */
+  padding-left: 35px !important;
+  padding-right: 35px !important;
+  color: white !important;
+  padding: 0rem 2.5rem !important;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black !important;
+  font-size: 1em !important;
+  image-rendering: pixelated;
+}
+
+/* button hover */
+.rpgui-button.hover,
+.rpgui-button:hover {
+  background-image: url('/img/button-hover.png');
+}
+
+/* button clicked */
+.rpgui-button.down,
+.rpgui-button:active {
+  background-image: url('/img/button-down.png');
+}
+
+.countdown {
+  font-size: 0.8em;
+  color: yellow;
 }
