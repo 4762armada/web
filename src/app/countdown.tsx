@@ -29,7 +29,7 @@ const Countdown = () => {
 
   return (
     <div className="pl-2">
-      mintOpenIn: {addLeadingZero(days)}{" "}
+      mintOpensIn: {addLeadingZero(days)}{" "}
       <span className="countdown">Days</span> {addLeadingZero(hours)}{" "}
       <span className="countdown">Hours</span> {addLeadingZero(minutes)}{" "}
       <span className="countdown">Minutes</span> {addLeadingZero(seconds)}{" "}
