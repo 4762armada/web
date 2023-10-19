@@ -4,7 +4,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer>
-      <div className="container mx-auto text-center">
+      <div className="container mx-auto text-center mt-40">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-1 text-xs">
           <a href="https://discord.com/invite/4762" target="_blank">
             Discord

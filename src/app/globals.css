@@ -28,7 +28,7 @@ body {
 }
 
 .bg-gradient {
-  background: url("/corsair_gates_wide.png");
+  background: url("/corsair_gates_closed.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
