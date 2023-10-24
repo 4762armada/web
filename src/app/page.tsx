@@ -26,7 +26,7 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="mb-24 lg:mb-0 grid text-center lg:max-w-5xl lg:w-full lg:grid-cols-3 lg:text-left pb-40 pt-40 xl:pt-60 xl:pb-40">
+      <div className="mb-1 lg:mb-32 grid text-center lg:max-w-5xl lg:w-full lg:grid-cols-3 lg:text-left pb-0 pt-96 mt-40">
         <a href="#" target="_blank" rel="noopener noreferrer">
           <button
             className="rpgui-button ml-1 mr-1 text-center"
