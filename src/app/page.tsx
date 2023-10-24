@@ -19,7 +19,7 @@ export default function Home() {
     };
   }, []);
 
-  const targetTime = moment.utc("2023-10-25T10:00:00");
+  const targetTime = moment.utc("2023-10-25T13:00:00");
 
   return fontLoaded ? (
     <main className="flex min-h-screen flex-col items-center justify-center p-8">
