@@ -1,31 +1,27 @@
 import { useEffect, useState } from "react";
+import moment from "moment-timezone";
 
-const Countdown = () => {
-  const targetDate = new Date("2023-10-25T10:00:00").getTime();
-  const [timeRemaining, setTimeRemaining] = useState(targetDate - Date.now());
+interface CountdownProps {
+  targetTime: any;
+}
+
+const Countdown: React.FC<CountdownProps> = ({ targetTime }) => {
+  const [currentTime, setCurrentTime] = useState<moment.Moment>(moment.utc());
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      const currentTime = Date.now();
-      const timeDiff = targetDate - currentTime;
-      setTimeRemaining(timeDiff);
-
-      if (timeDiff <= 0) {
-        clearInterval(interval);
-      }
+    const timer = setInterval(() => {
+      setCurrentTime(moment.utc());
     }, 1000);
 
     return () => {
-      clearInterval(interval);
+      clearInterval(timer);
     };
   }, []);
-
-  const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-  const hours = Math.floor(
-    (timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-  );
-  const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-  const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+  const timeDifference = moment.duration(moment(targetTime).diff(currentTime));
+  const days = timeDifference.days();
+  const hours = timeDifference.hours();
+  const minutes = timeDifference.minutes();
+  const seconds = timeDifference.seconds();
 
   return (
     <div className="pl-2">
