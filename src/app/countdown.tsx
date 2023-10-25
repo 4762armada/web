@@ -23,15 +23,7 @@ const Countdown: React.FC<CountdownProps> = ({ targetTime }) => {
   const minutes = timeDifference.minutes();
   const seconds = timeDifference.seconds();
 
-  return (
-    <div className="pl-2">
-      mintOpensIn: {addLeadingZero(days)}{" "}
-      <span className="countdown">Days</span> {addLeadingZero(hours)}{" "}
-      <span className="countdown">Hours</span> {addLeadingZero(minutes)}{" "}
-      <span className="countdown">Minutes</span> {addLeadingZero(seconds)}{" "}
-      <span className="countdown">Seconds</span>
-    </div>
-  );
+  return <div className="pl-2">mint is Open</div>;
 };
 
 const addLeadingZero = (value: any) => (value < 10 ? `0${value}` : value);

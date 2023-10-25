@@ -53,12 +53,11 @@ export default function Home() {
           </button>
         </a>
 
-        <a href="#" target="_blank" rel="noopener noreferrer">
+        <a href="https://mint.4762armada.com/" target="_blank" rel="noopener noreferrer">
           <button
             style={{ width: "20.3em" }}
             className="rpgui-button ml-1 mr-1 text-center"
             type="button"
-            disabled
           >
             <p>Mint Corsair</p>
           </button>
