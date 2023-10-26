@@ -23,7 +23,7 @@ const Countdown: React.FC<CountdownProps> = ({ targetTime }) => {
   const minutes = timeDifference.minutes();
   const seconds = timeDifference.seconds();
 
-  return <div className="pl-2">mint is Open</div>;
+  return <div className="pl-2">Corsair is Sold Out</div>;
 };
 
 const addLeadingZero = (value: any) => (value < 10 ? `0${value}` : value);
