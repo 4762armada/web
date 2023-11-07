@@ -29,7 +29,7 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="mb-1 lg:mb-32 grid text-center lg:max-w-5xl lg:w-full lg:grid-cols-3 lg:text-left pb-0 pt-96 mt-40">
+      <div className="grid text-center lg:max-w-5xl lg:w-full lg:grid-cols-3 lg:text-left pt-60 pb-60 mb-40">
         <a href="#" target="_blank" rel="noopener noreferrer">
           <button
             className="rpgui-button ml-1 mr-1 text-center"
