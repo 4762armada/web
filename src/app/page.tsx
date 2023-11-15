@@ -51,7 +51,7 @@ export default function Home() {
         onClick={() => setIsSidebarOpen(false)}
       ></div>
       <div className="header fixed h-20 left-0 top-0 z-10 w-full flex items-center justify-between pr-2 pl-2">
-        <Countdown targetTime={targetTime} />
+        <Countdown />
         <span
           onClick={() => setIsSidebarOpen(!isSidebarOpen)}
           className="border-l-4 border-white pl-2 text-blue-600"
@@ -70,7 +70,6 @@ export default function Home() {
             className="eightbit-btn mb-4"
             type="button"
             style={{ color: "#538f40", width: "20.3em" }}
- 
           >
             <p>{buttonText1}</p>
           </button>
