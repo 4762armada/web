@@ -24,18 +24,12 @@ const Countdown: React.FC<CountdownProps> = ({ targetTime }) => {
   const seconds = timeDifference.seconds();
 
   return (
-    <div className="pl-2 flex items-center text">
-      <p className="mr-4">Corsair Insignia is Sold Out</p>
-      <a
-        href="https://opensea.io/collection/4762-corsair-membership"
-        target="https://opensea.io/collection/4762-corsair-membership"
-      >
-        <img
-          width={24}
-          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA2CAYAAACMRWrdAAAAAXNSR0IArs4c6QAAAK5JREFUaIHtmkEKwCAMBGPx/1+2x16qsCW23TBzrahDYEnVCAAAuGhjjN1rzBZoyiStScPjkEYbgZgbiLmxSkU1zbLiNSUty1YMMTcQc6PH/jRT50/pLctWDDE3EHMj8w/6k15xRtmKIeYGYm486RVnqaX2imr6SfssWzHE3EDMjSfnin/jNl3LVgwxNxBzoy++7b5VUeFcMQIxPxBzY5o0L7zYSYE76Cog5kZZsRMvLRtc5z2dXgAAAABJRU5ErkJggg=="
-          alt="opensea"
-        ></img>
-      </a>
+    <div className="marquee w-full whitespace-nowrap pl-2 flex items-center text">
+      <div className="track">
+       - CORSAIR INSIGNIA
+        <span className="text-red-600"> SOLD OUT </span>
+        - WE MINTING PUNK ARMADA ON NOVEMBER 30TH -
+      </div>
     </div>
   );
 };

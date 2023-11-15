@@ -32,7 +32,7 @@ export default function Home() {
         }`}
         onClick={() => setIsSidebarOpen(false)}
       ></div>
-      <div className="fixed h-20 left-0 top-0 z-10 w-full flex items-center justify-between border-b border-gray-300 bg-gradient-to-b from-zinc-200  backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
+      <div className="header fixed h-20 left-0 top-0 z-10 w-full flex items-center justify-between ">
         {/* Contenedor para el texto, centrado */}
         <Countdown targetTime={targetTime} />
 
@@ -42,6 +42,7 @@ export default function Home() {
           src="/menu.png"
           width={24}
           style={{ filter: "invert(100%)" }}
+          className="mr-4"
         ></img>
       </div>
       <div className="grid text-center lg:max-w-5xl lg:w-full lg:grid-cols-2 pt-60 pb-60 mb-40">
@@ -54,7 +55,7 @@ export default function Home() {
             disabled
             className="eightbit-btn"
             type="button"
-            style={{ color: "grey", width: "20.3em" }}
+            style={{ color: "#538f40", width: "20.3em" }}
           >
             <p>Address Checker</p>
           </button>
@@ -69,9 +70,9 @@ export default function Home() {
             className="eightbit-btn"
             type="button"
             disabled
-            style={{ color: "grey", width: "20.3em" }}
+            style={{ color: "#538f40", width: "20.3em" }}
           >
-            <p>Mint PFP</p>
+            <p>MINT Punk Armada</p>
           </button>
         </a>
       </div>
