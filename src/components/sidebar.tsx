@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 interface SidebarProps {
   isOpen: boolean;
   onClose: () => void;
@@ -12,6 +14,11 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
     >
       <div className="font-bold lg mb-2 text-blue-600 pb-2">Menu</div>
       <ul className="list-none mb-4 text-xs">
+        <li className="mb-4">
+          <Link href="/" className="text-white hover:text-blue-800">
+            Home
+          </Link>
+        </li>
         <li className="mb-4">
           <a
             href="https://opensea.io/collection/4762-og"
@@ -32,29 +39,18 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
             Corsair Insignia
           </a>
         </li>
-      
       </ul>
       <div className="font-bold lg mb-2 text-blue-600 pb-2">PUNK Armada</div>
       <ul className="list-none mb-4 text-xs">
-      <li className="mb-4">
-          <a
-            href="/ip-rights"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white hover:text-blue-800"
-          >
+        <li className="mb-4">
+          <Link href="/ip-rights" className="text-white hover:text-blue-800">
             IP Rights
-          </a>
+          </Link>
         </li>
         <li className="mb-4">
-          <a
-            href="/on-chain"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white hover:text-blue-800"
-          >
+          <Link href="/on-chain" className="text-white hover:text-blue-800">
             On-Chain
-          </a>
+          </Link>
         </li>
         <li className="mb-4">
           <a href="#" className="text-white hover:text-blue-800">
