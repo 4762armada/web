@@ -32,11 +32,32 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
             Corsair Insignia
           </a>
         </li>
-        <li className="mb-4">
+      
+      </ul>
+      <div className="font-bold lg mb-2 text-blue-600 pb-2">PUNK Armada</div>
+      <ul className="list-none mb-4 text-xs">
+      <li className="mb-4">
           <a
-            href="#"
+            href="/ip-rights"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-white hover:text-blue-800"
           >
+            IP Rights
+          </a>
+        </li>
+        <li className="mb-4">
+          <a
+            href="/on-chain"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-blue-800"
+          >
+            On-Chain
+          </a>
+        </li>
+        <li className="mb-4">
+          <a href="#" className="text-white hover:text-blue-800">
             [Redacted]
           </a>
         </li>
