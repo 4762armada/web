@@ -14,7 +14,7 @@ export default function Home() {
   const [buttonText2, setButtonText2] = useState("Mint Punk Armada");
 
   const handleMouseEnter1 = () => {
-    setButtonText1("Soon");
+    setButtonText1("Address Checker");
   };
 
   const handleMouseLeave1 = () => {
@@ -70,12 +70,12 @@ export default function Home() {
         </div>
         <div className="grid text-center lg:max-w-5xl lg:w-full lg:grid-cols-2 pt-60 pb-60 mb-40">
           <a
-            href="#"
+            href="https://checker.4762armada.com/"
             onMouseEnter={handleMouseEnter1}
             onMouseLeave={handleMouseLeave1}
+            target="_blank"
           >
             <button
-              disabled
               className="eightbit-btn mb-4"
               type="button"
               style={{ color: "#538f40", width: "20.3em" }}

@@ -8,6 +8,5 @@ const Countdown: React.FC = ({}) => {
   );
 };
 
-const addLeadingZero = (value: any) => (value < 10 ? `0${value}` : value);
 
 export default Countdown;
