@@ -47,6 +47,10 @@ export default function Home() {
       <Head>
         <title>4762 Armada</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="description"
+          content="Rallying seafarers from over 120 diverse NFT projects, 4762 community is crafting the upcoming Armada of degens, artists and builders, destined to chart the course in the cycles to come."
+        />
       </Head>
       <main className="flex min-h-screen flex-col items-center justify-center p-8 bg-gradient">
         <Sidebar
