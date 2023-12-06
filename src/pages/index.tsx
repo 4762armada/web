@@ -45,12 +45,12 @@ export default function Home() {
   return fontLoaded ? (
     <>
       <Head>
-        <title>4762 Armada</title>
-        <link rel="icon" href="/favicon.ico" />
+        <meta property="og:title" content="4762 Armada" />
         <meta
-          name="description"
+          property="og:description"
           content="Rallying seafarers from over 120 diverse NFT projects, 4762 community is crafting the upcoming Armada of degens, artists and builders, destined to chart the course in the cycles to come."
         />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex min-h-screen flex-col items-center justify-center p-8 bg-gradient">
         <Sidebar
