@@ -96,7 +96,6 @@ export default function Home() {
             <button
               className="eightbit-btn mb-4"
               type="button"
-              disabled
               style={{ color: "#538f40", width: "20.3em" }}
             >
               <p>{buttonText2}</p>
