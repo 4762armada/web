@@ -22,7 +22,7 @@ export default function Home() {
   };
 
   const handleMouseEnter2 = () => {
-    setButtonText2("Soon");
+    setButtonText2("Mint Punk Armada");
   };
 
   const handleMouseLeave2 = () => {
@@ -89,9 +89,10 @@ export default function Home() {
           </a>
 
           <a
-            href="#"
+            href="https://mint.4762armada.com/"
             onMouseEnter={handleMouseEnter2}
             onMouseLeave={handleMouseLeave2}
+            target="_blank"
           >
             <button
               className="eightbit-btn mb-4"
