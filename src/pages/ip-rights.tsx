@@ -58,7 +58,7 @@ export default function Home() {
                 &quot;PUNK Armada NFTs&quot;) minted by a smart contract
                 deployed to the Ethereum blockchain at address
               </span>
-              <span className="c0">{" 0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx "}</span>
+              <span className="c0">{" 0xe50765DeB1429475b28F871571B9417E9FD0E542 "}</span>
               <span className="c0">
                 &nbsp;(the &quot;PUNK Armada Smart Contract&quot;). The PUNK
                 Armada Smart Contract associates each PUNK Armada NFT with a
