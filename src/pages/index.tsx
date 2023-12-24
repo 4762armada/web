@@ -10,23 +10,14 @@ import Head from "next/head";
 export default function Home() {
   const [fontLoaded, setFontLoaded] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const [buttonText1, setButtonText1] = useState("Address Checker");
-  const [buttonText2, setButtonText2] = useState("Mint Punk Armada");
-
-  const handleMouseEnter1 = () => {
-    setButtonText1("Address Checker");
-  };
-
-  const handleMouseLeave1 = () => {
-    setButtonText1("Address Checker");
-  };
+  const [buttonText2, setButtonText2] = useState("Punk Armada");
 
   const handleMouseEnter2 = () => {
-    setButtonText2("Mint Punk Armada");
+    setButtonText2("Check on OpenSea");
   };
 
   const handleMouseLeave2 = () => {
-    setButtonText2("Mint Punk Armada");
+    setButtonText2("Punk Armada");
   };
 
   useEffect(() => {
@@ -72,24 +63,9 @@ export default function Home() {
             {"Menu"}
           </span>
         </div>
-        <div className="grid text-center lg:max-w-5xl lg:w-full lg:grid-cols-2 pt-60 pb-60 mb-40">
+        <div className="grid text-center lg:w-full pt-60 pb-60 mb-40">
           <a
-            href="https://checker.4762armada.com/"
-            onMouseEnter={handleMouseEnter1}
-            onMouseLeave={handleMouseLeave1}
-            target="_blank"
-          >
-            <button
-              className="eightbit-btn mb-4"
-              type="button"
-              style={{ color: "#538f40", width: "20.3em" }}
-            >
-              <p>{buttonText1}</p>
-            </button>
-          </a>
-
-          <a
-            href="https://mint.4762armada.com/"
+            href="https://opensea.io/collection/punkarmada"
             onMouseEnter={handleMouseEnter2}
             onMouseLeave={handleMouseLeave2}
             target="_blank"
